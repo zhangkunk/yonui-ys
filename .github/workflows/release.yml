@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - /^release\/\d+\.\d+$/
+      - release/2.9
 name: Publish
 jobs:
 
