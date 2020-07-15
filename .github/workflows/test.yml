@@ -1,8 +1,8 @@
 on:
   push:
     branches:
-      - develop
-name: Develop
+      - test
+name: Test
 jobs:
 
   publish:
@@ -16,7 +16,7 @@ jobs:
         registry-url: https://registry.npmjs.org/
     - run: npm install
     - run: npm run build
-    - run: npm publish --tag iter
+    - run: npm publish --tag test
       env:
         NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
